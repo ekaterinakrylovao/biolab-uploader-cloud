@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url('fonts/Kanit-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-black: #000000;
+
+    --header-text: var(--color-black);
+}
+
+/* !Убираем псевдоэлементы EDGE и IE 10+! */
+/* удаление иконки очистки поля в IE */
+input[type="text"]::-ms-clear {
+    display: none;
+}
+
+/* удаление иконки отображения пароля в IE */
+input[type="password"]::-ms-reveal {
+    display: none;
+}
+
+body {
+    padding-right: 0 !important;
+    overflow: visible !important;
+    scrollbar-width: none; /* Скрыть полосу прокрутки в браузере Firefox */
+    -ms-overflow-style: none; /* Скрыть полосу прокрутки в браузере Internet Explorer и Edge */
+}
+
+/* Скрыть полосу прокрутки в браузере Chrome, Safari и Opera */
+body::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,13 @@
+.css-rvlqbl-MuiTreeItem-content {
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.MuiCollapse-root.MuiCollapse-vertical.MuiTreeItem-groupTransition.MuiCollapse-entered {
+    padding-left: 20px;
+    transition: padding-left 0s;
+}
+
+.MuiContainer-root.MuiContainer-maxWidthXl {
+    margin-left: 0 !important;
+}
